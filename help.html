@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+					<div class="container">
+						<header>
+							<h2><strong> Tools used to study the mutational effect in TDP-43 protein</strong></h2>
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+							</div>
+						</div>
+					</div>
+			
+		<div class="container" style="" "margin-left: 13em;">
+
+		<h3>Provean</h3>
+		<div>PROVEAN (Protein Variation Effect Analyzer) is used to predict the impact an amino acid substitution has on the biological function of a protein. It is useful for filtering sequence variants to identify nonsynonymous or indel variants that are predicted to be functionally important. </div>
+		<div>Reference : Choi Y, Chan AP (2015) PROVEAN web server: a tool to predict the functional effect of amino acid substitutions and indels. Bioinformatics 31(16): 2745-2747.</div>
+		<br>
+
+		<h3>PredictSNP</h3>
+		<div> PredictSNP is a consensus tool that predicts the functional impact of disease related amino acid mutations. It integrates various tools like nsSNPAnalyzer, PANTHER, PhD-SNP, PolyPhen, SIFT and SNAP.</div>
+		<div>Reference : Bendl, J., Stourac, J., Salanda, O., Pavelka, A., Wieben, E.D., Zendulka, J., Brezovsky, J., Damborsky, J. (2014) PredictSNP: robust and accurate consensus classifier for prediction of disease-related mutations. PLOS Computational Biology 10: e1003440.</div>
+		<br>
+
+		<h3>PhD-SNP</h3>
+		<div>Based on a SVM based classifier, PhD-SNP predicts whether an SNP is disease related or neutral. </div>
+		<div>Reference : Capriotti, E., Calabrese, R., Casadio, R. (2006) Predicting the insurgence of human genetic diseases associated to single point protein mutations with support vector machines and evolutionary information. Bioinformatics, 22:2729-2734.</div>
+		<br>
+
+		<h3>PolyPhen-2</h3>
+		<div>PolyPhen-2 (Polymorphism Phenotyping v2) uses straightforward physical and comparative considerations to predict the possible impact of an amino acid substitution on the structure and function of a human protein. </div>
+		<div>Reference : Adzhubei IA, Schmidt S, Peshkin L, Ramensky VE, Gerasimova A, Bork P, Kondrashov AS, Sunyaev SR.(2010) A method and server for predicting damaging missense mutations. Nat Methods 7(4):248-249.</div>
+		<br>
+
+		<h3>SIFT</h3>
+		<div>SIFT predicts whether an amino acid substitution affects protein function based on sequence homology and the physical properties of amino acids. SIFT can be applied to naturally occurring nonsynonymous polymorphisms and laboratory-induced missense mutations.</div>
+		<div>Reference : Sim NL, Kumar P, Hu J, Henikoff S, Schneider G, Ng PC. (2012) SIFT web server: predicting effects of amino acid substitutions on proteins.Nucleic Acids Research, 2012 Jul; 40 (Web Server Issue): W542-7 </div>
+		<br>
+
+		<h3>FATHMM</h3>
+		<div>It predicts the functional effects of proetin missense mutations using Hidden Markov Models. It predicts the functional consequences of both coding variants and non-coding variants.</div>
+		<div>Reference : Shihab HA, Gough J, Cooper DN, Stenson PD, Barker GLA, Edwards KJ, Day INM, Gaunt, TR. (2013). Predicting the Functional, Molecular and Phenotypic Consequences of Amino Acid Substitutions using Hidden Markov Models. Hum. Mutat., 34:57-65</div>
+		<br>
+
+		<h3>mCSM</h3>
+		<div>Predicts the changes in stability of a protein due to missense mutations using graph-based signatures. Protein-protein and protein-nucleic acid interaction can also be studied using mCSM.</div>
+		<div>Reference : Pires DE, Ascher DB, Blundell TL.(2014) mCSM: predicting the effect of mutations in proteins using graph-based signatures. Bioinformatics 30(3): 335-342.</div>
+		<br>
+
+		<h3>SDM</h3>
+		<div>Site Directed Mutator (SDM) is a computational method that analyses the variation of amino acid replacements occuring at specific structural environment that are tolerated within the family of homologous proteins of known 3-D strucures and convert them into substitution probability tables. These tables are uses as a quantative measure for predicting the protein stability upon mutation.</div>
+		<div>Reference : Arun P. Pandurangan, Bernardo Ochoa-Montaño, David B. Ascher, Tom L. Blundell (2017) SDM: a server for predicting effects of mutations on protein stability. Nucleic Acids Research, v. 45, Issue W1, Pages W229–W235</div>
+		<br>
+
+		<h3>DUET</h3>
+		<div>DUET consolidates two complementary approaches (mCSM and SDM) in a consensus prediction, obtained by combining the results of the separate methods in an optimised predictor using Support Vector Machines (SVM) to predict the functional impact of missense mutations on proteins.</div>
+		<div>Reference : Douglas E. V. Pires, David B. Ascher, Tom L. Blundell (2014) DUET: a server for predicting effects of mutations on protein stability via an integrated computational approach. Nucleic Acids Research, v. 42 (W1), p. W314-W319</div>
+		<br>
+
+		<h3>DynaMut</h3>
+		<div>Is used to analyse and visualise protein dynamics by sampling conformations and assess the impact of mutations on protein dynamics and stability resulting from vibrational entropy changes.</div>
+		<div>Reference : Carlos HM Rodrigues  Douglas EV Pires  David B Ascher (2018) DynaMut: predicting the impact of mutations on protein conformation, flexibility and stability. Nucleic Acids Research, Volume 46, Issue W1, Pages W350–W355 </div>
+		<br>
+
+
+		<h3>ENCoM</h3>
+		<div>ENCoM is an NMA-based tool that predicts the effects of mutations on protein stability and function. It accounts for the nature of amino acids which has shown to result in improved conformational space sampling and enables a coarse grained NMA method to predict the effect of SNP’s on protein dynamics and stability due to changes in vibrational entropy.</div>
+		<div>Reference : Frappier, V., Chartier, M., & Najmanovich, R. J. (2015). ENCoM server: exploring protein conformational space and the effect of mutations on protein function and stability. Nucleic acids research, 43(W1), W395-400</div>
+		<br>
+
+
+		<h3>SNPeffect</h3>
+		<div>SNPeffect is a web server that gives information on the aggregation, amyloid propensity, chaperone binding property and protein stability of a protein upon mutation. It makes use of the tools TANGO, WALTZ, LIMBO and FoldX. </div>
+		<div>Reference : Reumers J, Schymkowitz J, Ferkinghoff-Borg J, Stricher F, Serrano L, Rousseau F. (2005) SNPeffect: a database mapping molecular phenotypic effects of human non-synonymous coding SNPs. Nucleic Acids Res. 33: D527–D532. </div>
+		<br>
+
+		
+	        </div>
+		</div>
+	</div>
+	<br>
+	
+				{% endblock %} 
